@@ -18,7 +18,7 @@ namespace HelloBreadboardX1Module
 {
     public partial class Program
     {
-        private DigitalInput _foo; 
+        private DigitalInput _digitalInput; 
         // This method is run when the mainboard is powered up or reset.   
         void ProgramStarted()
         {
@@ -40,7 +40,7 @@ namespace HelloBreadboardX1Module
             // Use Debug.Print to show messages in Visual Studio's "Output" window during debugging.
             Debug.Print("Program Started");
 
-            _foo = breadBoard_X1.SetupDigitalInput(GT.Socket.Pin.Three, GlitchFilterMode.On, ResistorMode.Disabled);
+            _digitalInput = breadBoard_X1.SetupDigitalInput(GT.Socket.Pin.Three, GlitchFilterMode.On, ResistorMode.Disabled);
 
             var timer = new GT.Timer(50);
             timer.Tick += timer_Tick;
@@ -49,7 +49,7 @@ namespace HelloBreadboardX1Module
 
         void timer_Tick(GT.Timer timer)
         {
-            Mainboard.SetDebugLED(_foo.Read());
+            Mainboard.SetDebugLED(_digitalInput.Read());
         }
     }
 }
