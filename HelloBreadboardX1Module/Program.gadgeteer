@@ -37,7 +37,7 @@
           <moduleHasSocketUses Id="527d9ee6-7a09-43dd-a04b-95a4d75e1269">
             <socketUse Id="e25a43c2-ffac-4838-83bf-7610952f824b">
               <socket>
-                <socketUseReferencesSocket Id="ceb71fb7-f464-4ddb-b5b0-e4b1d1890909">
+                <socketUseReferencesSocket Id="f39a3b0b-7669-4023-9aee-cb91a66ee243">
                   <socketMoniker Id="c8c061aa-37a2-471a-ae0b-1fd08521d250" />
                 </socketUseReferencesSocket>
               </socket>
